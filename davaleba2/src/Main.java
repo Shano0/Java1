@@ -24,7 +24,6 @@ public class Main {
         String inputFile = input.nextLine();
         FindFile file = new FindFile();
         File log = new File("log.log");
-        log.createNewFile();
         FileWriter logfile = new FileWriter("log.log");
         logfile.write(LocalDateTime.now()+" შემოტანილი სიტყვაა: "+inputFile+"\n");
         file.findFile(inputFile,new File("C:\\Users\\datos\\OneDrive\\Desktop\\davaleba\\"), logfile);
